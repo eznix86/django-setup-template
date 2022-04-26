@@ -26,6 +26,9 @@ Like this guy, just copy and paste this command, it generate your project,
 - It automatically setups 3 environements for you, staging, prod, dev.
 - You also have a Procfile for heroku ;)
 
+### What you need to Ctrl+C and Ctrl+V?
+
+(Press the copy button too if you are a mouse guy)
 
 ```sh
 curl -sSL -H "Cache-Control: no-cache" https://raw.githubusercontent.com/theArtechnology/django-setup-template/main/install.sh | bash -s
