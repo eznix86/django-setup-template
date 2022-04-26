@@ -4,8 +4,7 @@ set -euo pipefail
 
 function init() {
   test -d "./django-setup-template" || git clone https://github.com/theArtechnology/django-setup-template.git
-  cp django-setup-template/* .
-
+  cp -R django-setup-template/* .
 }
 
 function setup_python() {
@@ -21,7 +20,6 @@ function setup_core_project() {
     mkdir ./core/settings
     touch ./core/settings/{__init__.py,defaults.py,prod.py,dev.py,staging.py}
     awk 'NR==16 {$0="BASE_DIR = Path(__file__).resolve().parent.parent.parent"} { print }' ./core/settings.py >  ./core/settings/defaults.py 
-
 }
 
 
