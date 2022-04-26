@@ -25,6 +25,7 @@ Like this guy, just copy and paste this command, it generate your project,
 ### Goodies
 - It automatically setups 3 environements for you, staging, prod, dev.
 - You also have a Procfile for heroku ;)
+- Using `rich` to have pretty logging... sexy ones
 
 ### What you need to Ctrl+C and Ctrl+V:
 
