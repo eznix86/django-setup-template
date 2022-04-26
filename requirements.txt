@@ -1,6 +1,7 @@
 django
 python-dotenv
 django_managepy_anywhere
+django-debug-toolbar
 factory_boy
 pytest-django
 flake8
