@@ -22,6 +22,7 @@ awk 'NR==16 {$0="BASE_DIR = Path(__file__).resolve().parent.parent.parent"} { pr
 
 rm ./core/settings.py
 rm -rf django-setup-template
+rm install.sh
 
 cat <<EOF > README.md
 Title
@@ -31,8 +32,8 @@ Title
 
 * Python >= 3.9
 * Postgres Development Package
-    * `sudo apt-get install libpq-dev` on linux
-    * `brew install postgresql` on mac
+    * sudo apt-get install libpq-dev on linux
+    * brew install postgresql on mac
 
 
 # Quick Info
