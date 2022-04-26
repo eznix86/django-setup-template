@@ -127,17 +127,17 @@ import os
 ENV = os.getenv("ENV", "prod")
 
 if ENV == "dev":
-    from app.settings.dev import *
+    from core.settings.dev import *
 elif ENV == "staging":
-    from app.settings.staging import *
+    from core.settings.staging import *
 else:
-    from app.settings.prod import *
+    from core.settings.prod import *
 EOF
 
 
 cat <<EOF > ./core/settings/dev.py
 from dotenv import load_dotenv
-from app.settings.defaults import *
+from core.settings.defaults import *
 from pathlib import Path
 import os
 
@@ -165,7 +165,7 @@ EOF
 
 cat <<EOF > ./core/settings/prod.py
 from dotenv import load_dotenv
-from app.settings.defaults import *
+from core.settings.defaults import *
 from pathlib import Path
 import os
 
@@ -179,7 +179,7 @@ EOF
 
 cat <<EOF > ./core/settings/staging.py
 from dotenv import load_dotenv
-from app.settings.defaults import *
+from core.settings.defaults import *
 from pathlib import Path
 import os
 
