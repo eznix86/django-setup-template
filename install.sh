@@ -21,6 +21,7 @@ awk 'NR==16 {$0="BASE_DIR = Path(__file__).resolve().parent.parent.parent"} { pr
 
 
 rm ./core/settings.py
+rm -rf django-setup-template
 
 cat <<EOF > README.md
 Title
