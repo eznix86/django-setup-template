@@ -35,7 +35,7 @@ curl -sSL -H "Cache-Control: no-cache" https://raw.githubusercontent.com/theArte
 
 ```
 
-Press enter, and boom! Project setup !
+Press enter, and boom! Project ready to rock !
 
 ### Want more ?
 
