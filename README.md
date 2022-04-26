@@ -19,6 +19,10 @@ Like this guy, just copy and paste this command, it generate your project,
 - mypy
 - rich
 
+### Goodies
+- It automatically setups 3 environements for you, staging, prod, dev.
+- You also have a Procfile for heroku ;)
+
 
 <img src="https://c.tenor.com/0heitU7-tg4AAAAC/copy-paste-paste.gif"> </img>
 
