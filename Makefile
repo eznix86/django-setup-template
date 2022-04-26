@@ -5,32 +5,29 @@ help: ## [host] makefile help description
 %:
 	@
 
-env-gen: ## create environment
-	test -d .venv || python3 -m venv .venv
-
 db-makemigrations:  ## create migration files from models
-	python manage.py makemigrations
+	manage.py makemigrations
 
 db-migrate: ## apply migration files to db
-	python manage.py migrate
+	manage.py migrate
 
 db-clear:
-	python manage.py sqlflush | python manage.py dbshell
+	manage.py sqlflush | manage.py dbshell
 
 static: ## collect static files
-	python manage.py collectstatic 
+	manage.py collectstatic 
 
 create-app: ## create an app <appname>
-	python manage.py startapp $(filter-out $@,$(MAKECMDGOALS))
+	manage.py startapp $(filter-out $@,$(MAKECMDGOALS))
 
 create-admin: ## create a super user
-	python manage.py createsuperuser
+	manage.py createsuperuser
 
 update-password: ## change user password <username>
-	python manage.py changepassword $(filter-out $@,$(MAKECMDGOALS))
+	manage.py changepassword $(filter-out $@,$(MAKECMDGOALS))
 
 start: ## start server
-	ENV=dev python manage.py runserver
+	ENV=dev manage.py runserver
 
 requirements: ## run pip freeze > requirements.txt
 	pip freeze > requirements.txt
