@@ -3,6 +3,11 @@
 
 Like this guy, just copy and paste this command, it generate your project,
 
+### Prequesities
+
+- Python 3+
+- Mac/Linux
+
 ### What you have inside
 
 - pytest with django (testing)
