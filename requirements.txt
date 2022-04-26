@@ -1,2 +1,6 @@
 django
 python-dotenv
+django_managepy_anywhere
+factory_boy
+pytest-django
+factory_boy
