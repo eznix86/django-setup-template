@@ -7,7 +7,7 @@ TEMPLATE_FOLDER="./templates"
 PROJECT_NAME="django-setup-template"
 
 function init() {
-  test -d "./django-setup-template" || git clone https://github.com/theArtechnology/${PROJECT_NAME}.git
+  test -d ${PROJECT_NAME} || git clone https://github.com/theArtechnology/${PROJECT_NAME}.git
   cp -R ${PROJECT_NAME}/* .
 }
 
